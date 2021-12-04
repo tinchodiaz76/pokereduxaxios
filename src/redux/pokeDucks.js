@@ -52,15 +52,6 @@ export const obtenerPokemonesAccion = ()=> async (dispatch, getState)=>{
 }
 
 export const siguientePokemonAccion = (numero) => async (dispatch,getState)=>{
-/*
-    dispatch({
-        type: SIGUIENTE_POKEMON_ACCION, 
-        payload: getState().pokemones.offset +numero
-    })
-
-    console.log('siguientePokemonAccion---->getState()=', getState().pokemones); 
-*/
-
 
    const offset= getState().pokemones.offset+ numero; /* o se puede leer como const {offset}= getState().pokemones;*/
 
@@ -77,14 +68,7 @@ export const siguientePokemonAccion = (numero) => async (dispatch,getState)=>{
 }
 
 export const anteriorPokemonAccion = (numero) => async (dispatch,getState)=>{
-/*
-        dispatch({
-            type: ANTERIOR_POKEMON_ACCION, 
-            payload: getState().pokemones.offset -20
-        })
-    
-        console.log('anteriorPokemonAccion---->getState()=', getState().pokemones); 
-*/    
+
         const offset= getState().pokemones.offset-numero ; /* o se puede leer como const {offset}= getState().pokemones;*/
     
     

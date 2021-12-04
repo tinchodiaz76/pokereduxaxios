@@ -19,19 +19,3 @@ export default function generateStore(){
     return store;
 };
 
-
-/*
-import {createStore, combineReducers} from "redux";
-import {composeWithDevTools} from "redux-devtools-extension";
-
-import loginReducer from "./userLogin/reducer";
-
-const reducers =combineReducers ({
-    loginReducer, --/*Aca se indican todos los reducers
-});
-
-
-const store= createStore(reducers,composeWithDevTools());
-
-export default store;
-*/
